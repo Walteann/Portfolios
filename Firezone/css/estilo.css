@@ -48,6 +48,9 @@ nav.navbar-transparente{
 position: relative;
 left: 600px;
 }
+#competencias{
+	color: #CCCCCC;
+}
 .classWal{
 	color:white;
 	background-color: black;
@@ -97,4 +100,10 @@ left: 600px;
     border: 3px double black;
     padding: 15px;
    	border-radius: 25px;
+}
+.diretosR{
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #ccc;
+	text-align: center;
 }
