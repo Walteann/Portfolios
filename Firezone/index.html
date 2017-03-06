@@ -57,7 +57,7 @@ eval('var myLine = new Chart(document.getElementById(ChartId).getContext("2d")).
     </style>
 
   </head>
-  <body>
+  <body class="img-responsive">
 
     
     
@@ -102,12 +102,12 @@ eval('var myLine = new Chart(document.getElementById(ChartId).getContext("2d")).
     <div >
       
         <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-8">
+        <div class="col-md-4  col-xs-12">
           <div class="walPerfil">
             <img src="imagens/WalPerfil.png" class="img-responsive" >
           </div>
         </div>
-        <div class="col-md-8 col-sm-8">
+        <div class="col-md-8 col-xs-12">
         <div class="cabecalho">
          <h1> Walteann Costa</h1>
          <h4>Ciência da Computação</h4>
@@ -129,37 +129,34 @@ eval('var myLine = new Chart(document.getElementById(ChartId).getContext("2d")).
  </section> 
     <br>
   <section class="WalCer">
-    <div class="container ">
+    <div class="container-fluid ">
   
             <div class="page-header">
               <span id="competencias"><h1>Competências Full-Stack</h1></span>
             </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="col-md-6 col-sm-6 col-xs-12">
 
 
         <!-- INICIO Gráfico Front end-->
-         <canvas  id="chart-01" width="400" height="402"  style="background-color:rgba(0,0,0,1);border-radius:0px;width:400px;height:402px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
-    <script> function MoreChartOptions(){} var ChartData = [{value :75,
-color:'rgba(217,116,9,1)',title:'HTML5'},{value :62,color:'rgba(21,120,212,1)',title:'CSS3'},{value :65,color:'rgba(242,242,0,1)',title:'JavaScript'},{value :53,color:'rgba(79,15,241,1)',title:'BootStrap'},{value :42,color:'rgba(7,55,99,1)',title:'jQuery'},];ChartOptions= {decimalSeparator:".",thousandSeparator:",",spaceLeft:12,spaceRight:12,spaceTop:20,spaceBottom:12,scaleLabel:"<%=value+''%>",yAxisMinimumInterval:'none',scaleShowLabels:false,scaleShowLine:false,scaleLineStyle:"solid",scaleLineWidth:1,scaleLineColor:"rgba(0,0,0,0.6)",scaleOverlay :false,scaleOverride :false,scaleSteps:10,scaleStepWidth:10,scaleStartValue:0,inGraphDataShow:true,inGraphDataTmpl:'<%=v1%>',inGraphDataFontFamily:"'Slabo 13px'",inGraphDataFontStyle:"normal normal",inGraphDataFontColor:"rgba(255,255,255,1.00)",inGraphDataFontSize:15,inGraphDataPaddingX:0,inGraphDataPaddingY:0,inGraphDataAlign:"center",inGraphDataVAlign:"middle",inGraphDataXPosition:2,inGraphDataYPosition:3,inGraphDataAnglePosition:2,inGraphDataRadiusPosition:3,inGraphDataRotate:0,inGraphDataPaddingAngle:0,inGraphDataPaddingRadius:15, inGraphDataBorders:false,inGraphDataBordersXSpace:1,inGraphDataBordersYSpace:1,inGraphDataBordersWidth:1,inGraphDataBordersStyle:"solid",inGraphDataBordersColor:"rgba(0,0,0,1)",legend:true,maxLegendCols:5,legendBlockSize:20,legendFillColor:'rgba(255,255,255,0.00)',legendColorIndicatorStrokeWidth:4,legendPosX:-2,legendPosY:4,legendXPadding:0,legendYPadding:0,legendBorders:false,legendBordersWidth:1,legendBordersStyle:"solid",legendBordersColors:"rgba(33,31,31,1)",legendBordersSpaceBefore:5,legendBordersSpaceLeft:5,legendBordersSpaceRight:5,legendBordersSpaceAfter:5,legendSpaceBeforeText:5,legendSpaceLeftText:5,legendSpaceRightText:5,legendSpaceAfterText:5,legendSpaceBetweenBoxAndText:5,legendSpaceBetweenTextHorizontal:5,legendSpaceBetweenTextVertical:5,legendFontFamily:"'Cabin'",legendFontStyle:"normal normal",legendFontColor:"rgba(255,255,255,1.00)",legendFontSize:15,showYAxisMin:false,rotateLabels:"smart",xAxisBottom:true,yAxisLeft:true,yAxisRight:false,graphTitleSpaceBefore:5,graphTitleSpaceAfter:-49, graphTitleBorders:false,graphTitleBordersXSpace:1,graphTitleBordersYSpace:1,graphTitleBordersWidth:1,graphTitleBordersStyle:"solid",graphTitleBordersColor:"rgba(0,0,0,1)",graphTitle : "Front-End\n",graphTitleFontFamily:"'Iceland'",graphTitleFontStyle:"normal normal",graphTitleFontColor:"rgba(255,162,0,1)",graphTitleFontSize:41,graphSubTitleSpaceBefore:-8,graphSubTitleSpaceAfter:3, graphSubTitleBorders:false,graphSubTitleBordersXSpace:1,graphSubTitleBordersYSpace:1,graphSubTitleBordersWidth:1,graphSubTitleBordersStyle:"solid",graphSubTitleBordersColor:"rgba(0,0,0,1)",graphSubTitle : "Add SubTitle Here",graphSubTitleFontFamily:"'Play'",graphSubTitleFontStyle:"normal normal",graphSubTitleFontColor:"rgba(10,10,10,1)",graphSubTitleFontSize:14,scaleFontFamily:"'Open Sans'",scaleFontStyle:"normal normal",scaleFontColor:"rgba(0,0,0,1)",scaleFontSize:12,pointLabelFontFamily:"'Open Sans'",pointLabelFontStyle:"normal normal",pointLabelFontColor:"rgba(102,102,102,1)",pointLabelFontSize:12,angleShowLineOut:true,angleLineStyle:"solid",angleLineWidth:1,angleLineColor:"rgba(0,0,0,0.1)",percentageInnerCutout:50,scaleShowGridLines:true,scaleGridLineStyle:"solid",scaleGridLineWidth:1,scaleGridLineColor:"rgba(0,0,0,0.1)",scaleXGridLinesStep:1,scaleYGridLinesStep:3,segmentShowStroke:true,segmentStrokeStyle:"solid",segmentStrokeWidth:2,segmentStrokeColor:"rgba(255,255,255,1.00)",datasetStroke:true,datasetFill : true,datasetStrokeStyle:"solid",datasetStrokeWidth:2,bezierCurve:true,bezierCurveTension :0.4,pointDotStrokeStyle:"solid",pointDotStrokeWidth : 1,pointDotRadius : 3,pointDot : true,scaleTickSizeBottom:5,scaleTickSizeTop:5,scaleTickSizeLeft:5,scaleTickSizeRight:5,graphMin:0,barShowStroke : false,barBorderRadius:0,barStrokeStyle:"solid",barStrokeWidth:1,barValueSpacing:15,barDatasetSpacing:0,scaleShowLabelBackdrop :true,scaleBackdropColor:'rgba(255,255,255,0.75)',scaleBackdropPaddingX :2,scaleBackdropPaddingY :2,animation : true,onAnimationComplete : function(){MoreChartOptions()}};
- DrawTheChart(ChartData,ChartOptions,"chart-01","PolarArea");</script>
+        <img src="imagens/graficoFront.png">
 
 <!-- FIM Gráfico Front-end -->
         </div>
 
-        <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="col-md-6 col-xs-12">
         
          <div class="iconFront">
           <h3> Conhecimento Front-End</h3>
-          <p id="borderimg">Atualmente na parte  Front-End estou desenvolvendo usando essas linguagens. Vale ressaltar que, ainda sou Trainee/Junior. que de vez em quando é  preciso pesquisar e consultar referências.</p>
+          <p id="borderimg" >Atualmente na parte  Front-End estou desenvolvendo usando essas linguagens. Vale ressaltar que, ainda sou Trainee/Junior. que de vez em quando é  preciso pesquisar e consultar referências.</p>
 
           <br>
-           
-          <img src="icones/html564x64.png">
-          <img src="icones/css364x64.png">
-          <img src="icones/javascript64x64.png">
-          <img src="icones/bootstrap64x64.png">
-          <img src="icones/jquery64x64.png">
-            
+           <div class="img-group">
+          <img src="icones/html564x64.png" >
+          <img src="icones/css364x64.png" >
+          <img src="icones/javascript64x64.png" >
+          <img src="icones/bootstrap64x64.png" >
+          <img src="icones/jquery64x64.png" >
+            </div>
             </div>
         </div>
         
@@ -169,11 +166,11 @@ color:'rgba(217,116,9,1)',title:'HTML5'},{value :62,color:'rgba(21,120,212,1)',t
   </section>  
   <br>
 
-  <section class="WalBackEnd">
+  <section class="WalBackEnd  col-xs-12">
     <div class="container ">
   
 
-        <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="col-md-12  iconFront">
           <h3> Conhecimento Back-End </h3>
           <p>Back-End foi o meu primeiro contato com programação, aprender Java e outras linguagem como C#, PHP me fizeram decidir que ser um Desenvolvedor é o que realmente quero para minha vida. Tenho um enorme carinho por tudo que aprendo, no Front-End e no Back.</p>
 
@@ -182,13 +179,10 @@ color:'rgba(217,116,9,1)',title:'HTML5'},{value :62,color:'rgba(21,120,212,1)',t
           <img src="icones/php64x64.png">
           <img src="icones/sql.png">
 
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
-
+     
          
-          <div>
-            <img src="imagens/chart.png" style="float:right " class="img-responsive">
-          </div>
+        <img src="imagens/chart.png" id="testeGrafico" >
+          
 
         
 
@@ -198,13 +192,14 @@ color:'rgba(217,116,9,1)',title:'HTML5'},{value :62,color:'rgba(21,120,212,1)',t
     </div>
   </section>  
 
-  <!-- Inicio Footer-->
-<footer id="rodape">
-  <div class="diretosR">
-  <h6>This profile was been built by Walteann<h6>
-  </div>
-</footer>
-  <!-- Fim Footer-->
+<section class="rodape" style=" background-color: black;
+  color: white;
+  width: 100%
+  height: 100px;
+  margin: 10px 0px 0px 0px;
+">
+  teste
+</section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
