@@ -1,10 +1,14 @@
-
-.bodyTeste body{
-	background-image:  url('imagens/WalBack.png');       
-  background-attachment: fixed;   
-  font-family: Helvetica,Arial,sans-serif;  
-  overflow-x: hidden;"
-	 	
+body{
+	background-image:  url('../imagens/WalBackBack.png');
+	background-repeat: no-repeat;       
+  	background-attachment: fixed;   
+  	font-family: Helvetica,Arial,sans-serif;  
+  	overflow-x: hidden;
+	background-size: cover;
+    -webkit-background-size: cover; /*Css para safari e chrome*/
+    -moz-background-size: cover; /*Css para firefox*/
+    -ms-background-size: cover; /*Css para IE*/
+    -o-background-size: cover; /*Css para Opera*/	 	
 }
 
 
