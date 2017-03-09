@@ -103,8 +103,8 @@ left: 600px;
 	background: white;
 	border: 1px double black;
 	border-radius: 50px;
-	/*width: 500px;*/
-	height: 340px;
+	width: 400px;
+	height: 400px;
 }
 
 #borderimg { 
