@@ -1,0 +1,144 @@
+
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0px; 
+    font-family: Helvetica,arial;
+    font-weight: lighter;
+}
+
+header div a {
+    text-decoration: none;
+    color: #d73b1e;
+   
+}
+header div a span {  
+    font-family: "Droid sans",sans-serif;
+    font-weight: 100;
+}
+
+.logotipo {
+    margin-top: 10px;
+    height: 75px;
+    width: 350px;
+}
+.logotipo h1 {
+    margin: 1px 25px 0 25px;
+}
+.logotipo legend {
+    margin: 1px 90px;
+     font-family: "Droid sans",sans-serif;
+    color: #523468; 
+}
+
+header input{
+    display: flex;
+    align-items: center;
+    margin: 15px 150px 15px 90px;
+    height: 35px;
+    width: 350px;
+    border-radius: 5px;
+    background-image: url("../icones/search.png");
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+    background-size: 18px;
+    padding: 12px 20px 12px 40px;    
+    
+}
+
+header div#free {
+     font-family: "Droid sans",sans-serif;
+     color: #d73b1e; 
+     height: 40px;
+    width: 160px;
+    margin: 10px;
+         
+}
+
+header img {
+    margin: 2px 10px 10px 5px;
+}
+header div#bag{
+    height: 40px;
+    width: 80ox;
+    margin: 15px;
+    font-family: "Oswald",sans-serif;
+    font-size: 25;
+    color: #b3b3c1;
+}
+#bag span {
+    color: #d73a1e;
+}
+
+
+
+
+
+/* FIM HEADER */
+/* NAVEGACAO */
+
+nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    background-color: #523468; 
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+nav ul li{
+    float: left;
+    margin-right: 15px;
+}
+
+
+nav ul li a{
+    text-align: center;
+    padding: 8px 16px;
+    display: block;
+    color:#ffffff;
+    text-decoration: none;
+
+    
+}
+
+
+.botao {
+   
+    text-align:center;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.botao:hover {
+    background-color: #422a53;
+    border-radius: 5px;
+}
+
+/* FIM NAVEGACAO */
+
+
+
