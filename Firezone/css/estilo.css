@@ -1,129 +1,90 @@
-body{
-	background-image:  url('../imagens/WalBackBack.png');
-	background-repeat: no-repeat;       
-  	background-attachment: fixed;   
-  	font-family: Helvetica,Arial,sans-serif;  
-  	overflow-x: hidden;
-	background-size: cover;
-    -webkit-background-size: cover; /*Css para safari e chrome*/
-    -moz-background-size: cover; /*Css para firefox*/
-    -ms-background-size: cover; /*Css para IE*/
-    -o-background-size: cover; /*Css para Opera*/	 	
-}
+/********* NAVEGADOR ********/
 
-
-.img-log{
-	height: 40px;  			/* altura da logo  */
-	width: 132px;			/* largura da logo  */
-	display: block;			/* display do tipo Block  */
-	background: url('../imagens/logo.png') no-repeat;  /* imagem da logo em svg e que não repita  */
-	background-size: contain;/* Escala a img, para q tenha a mesma altura e largura definida nesse bloco */
-	color: transparent;  			/* Cor transparente  */
-
-}
-nav.navbar-transparente{
-	padding: 15px 0px; 		/* padding  */
-	background: rgba(0,0,0,0.6); /* Cor rgba, com opacidade de 0.6, para de transparencia  */
-	border: none; /* remove as bordas */
-}
-
-.navbar-brand{
-	
-	padding: 5px 15px;
-}
-
-
-.navbar-inverse .navbar-nav>li>a, #rodape .nav a{
-	color: white;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover{
-	color: #9bf0e1;
-	background: none;
-}
-
-.capaInicial{
-
-	margin-top: -100px;
-
-}
-
-#cabecalho h1{
-position: relative;
-left: 600px;
-}
-#competencias{
-	color: #CCCCCC;
-}
-.classWal{
-	color:white;
-	background-color: #0F0F0F;
+.navbar {
+	background-color: #222222;
+	text-transform: uppercase;
+	font-family: 'Comic Sans MS',Arial,sans-serif;
 	opacity: 0.9;
-
+	font-weight: 700;
+	
 }
-.walPerfil img{
-	border: 1px solid white;
-	margin: 20px;
-	position: relative;
-	left: 20px;
+
+.navbar a {
+	color: #98d2ff !important;
+	opacity: 0.7 ;
+}
+
+.navbar a:hover,{
 	opacity: 1;
-}
-.redeSocial{
-	position: absolute;
-	top: 0px;
-	right: 80px;
-	margin: 10px;
-	padding: 5px;
-}
-.WalResumo{
-
-	background: #ffffff;
-	width: 1365px;
-	height: 300px;
-}
-.WalBackEnd{
-	background-color: #FFFFFF;
-	height: 400px;
+	background-color: #13181b !important;
 }
 
-.WalCer{
-	background-color: #000000;
+
+.navbar button:hover {
+	opacity: 1;
+	background-color: #13181b !important;
+}
+
+.navbar-brand {
+	font-family: "Economica",Arial,sans-serif;
+	font-size: 30px;
+	color: #13181b !important;
+}
+
+
+/******** HEADER ********/
+
+.header {
 	height: 600px;
+	width: 100%;
+	padding: 30px 0 30px;
+	
+	background-image: url(../imagem/bg.png);
+	background-position: center center;
+	background-position: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
 }
 
-#transparente{
-	background: transparent;
-	height: 600px;
-	position: relative;
+.header h1 {
+	font-family: "Handlee",Arial,sans-serif;
+	font-size: 60px;
+	font-weight: 500;
+	padding-top: 240px;
+	text-align: center;
 }
 
-.iconFront{
-	margin: 15px;
-	padding: 10px;
-	background: white;
-	border: 1px double black;
-	border-radius: 50px;
-	width: 400px;
-	height: 400px;
+
+@media(max-width: 768){
+	
+	.header {
+		padding: 30px;
+		height: 750px;
+	}
+	
 }
 
-#borderimg { 
-    border: 3px double black;
-    padding: 15px;
-   	border-radius: 25px;
-}
-#testeGrafico{
-
-float: right;
-position: relative;
 
 
-}
-.rodape{
-	background-color: black;
-	color: white;
-	width: 100%
-	height: 100px;
-	margin: 10px 0px 0px 0px;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
