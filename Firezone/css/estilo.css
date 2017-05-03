@@ -1,90 +1,69 @@
-/********* NAVEGADOR ********/
-
-.navbar {
-	background-color: #222222;
-	text-transform: uppercase;
-	font-family: 'Comic Sans MS',Arial,sans-serif;
-	opacity: 0.9;
-	font-weight: 700;
-	
+body {
+	padding:0;
+	margin:0;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
-.navbar a {
-	color: #98d2ff !important;
-	opacity: 0.7 ;
-}
-
-.navbar a:hover,{
-	opacity: 1;
-	background-color: #13181b !important;
-}
-
-
-.navbar button:hover {
-	opacity: 1;
-	background-color: #13181b !important;
-}
-
-.navbar-brand {
-	font-family: "Economica",Arial,sans-serif;
-	font-size: 30px;
-	color: #13181b !important;
-}
-
-
-/******** HEADER ********/
-
-.header {
-	height: 600px;
+.cabecalho {
 	width: 100%;
-	padding: 30px 0 30px;
-	
-	background-image: url(../imagem/bg.png);
-	background-position: center center;
-	background-position: no-repeat;
+	height: 700px;
+	background-image: url("../WalbgPequeno.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
-	color: #FFFFFF;
-}
-
-.header h1 {
-	font-family: "Handlee",Arial,sans-serif;
-	font-size: 60px;
-	font-weight: 500;
-	padding-top: 240px;
-	text-align: center;
-}
-
-
-@media(max-width: 768){
+	background-position: center center;;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align:center;
+	align-items: center;
 	
-	.header {
-		padding: 30px;
-		height: 750px;
+}
+
+.entradas {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	margin-top: 170px;
+}
+.botao {
+	font-size: 12pt;
+	height: 45px;
+	width: 120px;
+	margin: 10px;
+}
+
+@media only screen and (min-width: 950px){
+	
+	.entradas {
+		margin-top: 200px;
 	}
 	
+	.botao {
+		width: 150px;
+	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 1000px){
+	
+	
+	.cabecalho {
+		background-image: url(../WalBg.png);
+		
+	}
+	.entradas {
+		margin-top: 400px;
+	}
+	
+	
+	.botao {
+		font-size: 30pt;
+		height: 70px;
+		width:200px;
+	}
+	
+	
+}
