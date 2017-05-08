@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Fir3ZØnE IFPE</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="estiloIF.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+<script src="jquery-3.2.1.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <script>
+  	 $(document).ready(function(){
+		     $(".scroll").click(function(event){
+				 event.preventDefault();
+				 $('html,body').animate({scrollTop:$(this.hash).offset().top },800);
+			 });
+	    });
+  </script>
+  
+  
+  
+  <body>
+   
+   <!-- NAVEGAÇÃO -->
+    
+    <nav id="minhaNavbar" class="navbar  navbar-inverse navbar-fixed-top " role="navigation">
+    	
+    	<div class="container-fluid">
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+    				
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    				
+    			</button>
+    			
+    			<a href="#Home" class="navbar-brand scroll"><img src="logo.png" alt="logo" height:="20px" width="150px"></a>
+    		</div>
+    			<div class="navbar-collapse collapse" id="menu">
+    				
+    				<ul class="nav navbar-nav navbar-right">
+    					<li><a class="scroll" href="#Home">Home</a></li>
+    					<li><a class="scroll"href="#Anexos">Anexos</a></li>
+    					<li><a class="scroll" href="#Atividades">Atividades</a></li>
+    					<li><a class="scroll" href="#Equipe">Equipe</a></li>
+    				</ul>
+    			</div>		
+    	</div>
+    </nav>
+    
+    
+    
+    <section class="Home" id="Home">
+    	
+    	<div class="logoMarca">
+    		<img src="Fir3ZOnE-Logo.png" alt="logo-fir3zone">
+    	</div>
+    </section>
+    
+    
+     <section class="Anexos" id="Anexos">
+    		<div class="container">
+    			<div class="row">
+    				<h1>Anexos</h1>
+    				<div class="conteudo" id="conteudo">
+    					<h4>Anexos</h4>
+    				</div>
+    			</div>
+    		</div>
+    </section>
+    
+      <section class="Atividades" id="Atividades">
+    	
+    		<div class="container">
+    			<div class="row">
+    				<h1>Atividades</h1>
+    				<div class="conteudo" id="conteudo">
+    					<h4>Atividades</h4>
+    				</div>
+    			</div>
+    		</div>
+    		
+    </section>
+    
+       <section class="Equipe" id="Equipe">
+    	
+    		<div class="container">
+    			<div class="row">
+    				<h1>EQUIPE</h1>
+    				<div class="conteudo" id="conteudo">
+    					<h4>Nomes</h4>
+    				</div>
+    			</div>
+    		</div>
+    		
+    </section>  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
