@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+}
+
+
+/* nav */
+
+#navegacao {
+	display: fixed;
+	
+
+}
+
+/* header */
+
+#inicio {
+	height: 700px;
+	width: 100%;
+	background-image: url('../imagens/engrenagem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    
+}
+#inicio h3{
+    font-size: 30pt;
+    color: #000;
+}
+
+/* sobremim */
+
+.sobreMim{
+    
+	background-color: #818d96;
+    color: #fbffff;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+    text-align: center;
+
+}
