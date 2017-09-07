@@ -1,0 +1,1557 @@
+/* walt.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.walt-serif {
+    font-family: serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.walt-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.walt-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    margin-bottom: -5px
+}
+
+a {
+    color: inherit
+}
+
+.walt-table,
+.walt-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.walt-table-all {
+    border: 1px solid #ccc
+}
+
+.walt-bordered tr,
+.walt-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.walt-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.walt-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.walt-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.walt-hoverable tbody tr:hover,
+.walt-ul.walt-hoverable li:hover {
+    background-color: #ccc
+}
+
+.walt-centered tr th,
+.walt-centered tr td {
+    text-align: center
+}
+
+.walt-table td,
+.walt-table th,
+.walt-table-all td,
+.walt-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.walt-table th:first-child,
+.walt-table td:first-child,
+.walt-table-all th:first-child,
+.walt-table-all td:first-child {
+    padding-left: 16px
+}
+
+.walt-btn,
+.walt-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.walt-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.walt-btn,
+.walt-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.walt-disabled,
+.walt-btn:disabled,
+.walt-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.walt-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.walt-btn.walt-disabled:hover,
+.walt-btn:disabled:hover {
+    box-shadow: none
+}
+
+.walt-badge,
+.walt-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.walt-badge {
+    border-radius: 50%
+}
+
+.walt-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.walt-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.walt-ul li:last-child {
+    border-bottom: none
+}
+
+.walt-tooltip,
+.walt-display-container {
+    position: relative
+}
+
+.walt-tooltip .walt-text {
+    display: none
+}
+
+.walt-tooltip:hover .walt-text {
+    display: inline-block
+}
+
+.walt-ripple:active {
+    opacity: 0.5
+}
+
+.walt-ripple {
+    transition: opacity 0s
+}
+
+.walt-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.walt-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.walt-dropdown-click,
+.walt-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.walt-dropdown-hover:hover .walt-dropdown-content {
+    display: block;
+    z-index: 1
+}
+
+.walt-dropdown-hover:first-child,
+.walt-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.walt-dropdown-hover:hover>.walt-button:first-child,
+.walt-dropdown-click:hover>.walt-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.walt-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0
+}
+
+.walt-check,
+.walt-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.walt-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto
+}
+
+.walt-bar-block .walt-dropdown-hover,
+.walt-bar-block .walt-dropdown-click {
+    width: 100%
+}
+
+.walt-bar-block .walt-dropdown-hover .walt-dropdown-content,
+.walt-bar-block .walt-dropdown-click .walt-dropdown-content {
+    min-width: 100%
+}
+
+.walt-bar-block .walt-dropdown-hover .walt-button,
+.walt-bar-block .walt-dropdown-click .walt-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.walt-main,
+#main {
+    transition: margin-left .4s
+}
+
+.walt-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.walt-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.walt-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.walt-center .walt-bar {
+    display: inline-block;
+    width: auto
+}
+
+.walt-bar .walt-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block
+}
+
+.walt-bar .walt-dropdown-hover,
+.walt-bar .walt-dropdown-click {
+    position: static;
+    float: left
+}
+
+.walt-bar .walt-button {
+    white-space: normal
+}
+
+.walt-bar-block .walt-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none
+}
+
+.walt-bar-block.walt-center .walt-bar-item {
+    text-align: center
+}
+
+.walt-block {
+    display: block;
+    width: 100%
+}
+
+.walt-responsive {
+    overflow-x: auto
+}
+
+.walt-container:after,
+.walt-container:before,
+.walt-panel:after,
+.walt-panel:before,
+.walt-row:after,
+.walt-row:before,
+.walt-row-padding:after,
+.walt-row-padding:before,
+.walt-cell-row:before,
+.walt-cell-row:after,
+.walt-clear:after,
+.walt-clear:before,
+.walt-bar:before,
+.walt-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.walt-col,
+.walt-half,
+.walt-third,
+.walt-twothird,
+.walt-threequarter,
+.walt-quarter {
+    float: left;
+    width: 100%
+}
+
+.walt-col.s1 {
+    width: 8.33333%
+}
+
+.walt-col.s2 {
+    width: 16.66666%
+}
+
+.walt-col.s3 {
+    width: 24.99999%
+}
+
+.walt-col.s4 {
+    width: 33.33333%
+}
+
+.walt-col.s5 {
+    width: 41.66666%
+}
+
+.walt-col.s6 {
+    width: 49.99999%
+}
+
+.walt-col.s7 {
+    width: 58.33333%
+}
+
+.walt-col.s8 {
+    width: 66.66666%
+}
+
+.walt-col.s9 {
+    width: 74.99999%
+}
+
+.walt-col.s10 {
+    width: 83.33333%
+}
+
+.walt-col.s11 {
+    width: 91.66666%
+}
+
+.walt-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:601px) {
+    .walt-col.m1 {
+        width: 8.33333%
+    }
+    .walt-col.m2 {
+        width: 16.66666%
+    }
+    .walt-col.m3,
+    .walt-quarter {
+        width: 24.99999%
+    }
+    .walt-col.m4,
+    .walt-third {
+        width: 33.33333%
+    }
+    .walt-col.m5 {
+        width: 41.66666%
+    }
+    .walt-col.m6,
+    .walt-half {
+        width: 49.99999%
+    }
+    .walt-col.m7 {
+        width: 58.33333%
+    }
+    .walt-col.m8,
+    .walt-twothird {
+        width: 66.66666%
+    }
+    .walt-col.m9,
+    .walt-threequarter {
+        width: 74.99999%
+    }
+    .walt-col.m10 {
+        width: 83.33333%
+    }
+    .walt-col.m11 {
+        width: 91.66666%
+    }
+    .walt-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .walt-col.l1 {
+        width: 8.33333%
+    }
+    .walt-col.l2 {
+        width: 16.66666%
+    }
+    .walt-col.l3 {
+        width: 24.99999%
+    }
+    .walt-col.l4 {
+        width: 33.33333%
+    }
+    .walt-col.l5 {
+        width: 41.66666%
+    }
+    .walt-col.l6 {
+        width: 49.99999%
+    }
+    .walt-col.l7 {
+        width: 58.33333%
+    }
+    .walt-col.l8 {
+        width: 66.66666%
+    }
+    .walt-col.l9 {
+        width: 74.99999%
+    }
+    .walt-col.l10 {
+        width: 83.33333%
+    }
+    .walt-col.l11 {
+        width: 91.66666%
+    }
+    .walt-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.walt-content {
+    max-width: 980px;
+    margin: auto
+}
+
+.walt-rest {
+    overflow: hidden
+}
+
+.walt-cell-row {
+    display: table;
+    width: 100%
+}
+
+.walt-cell {
+    display: table-cell
+}
+
+.walt-cell-top {
+    vertical-align: top
+}
+
+.walt-cell-middle {
+    vertical-align: middle
+}
+
+.walt-cell-bottom {
+    vertical-align: bottom
+}
+
+.walt-hide {
+    display: none!important
+}
+
+.walt-show-block,
+.walt-show {
+    display: block!important
+}
+
+.walt-show-inline-block {
+    display: inline-block!important
+}
+
+@media (max-width:600px) {
+    .walt-modal-content {
+        margin: 0 10px;
+        width: auto!important
+    }
+    .walt-modal {
+        padding-top: 30px
+    }
+    .walt-dropdown-hover.walt-mobile .walt-dropdown-content,
+    .walt-dropdown-click.walt-mobile .walt-dropdown-content {
+        position: relative
+    }
+    .walt-hide-small {
+        display: none!important
+    }
+    .walt-mobile {
+        display: block;
+        width: 100%!important
+    }
+    .walt-bar-item.walt-mobile,
+    .walt-dropdown-hover.walt-mobile,
+    .walt-dropdown-click.walt-mobile {
+        text-align: center
+    }
+    .walt-dropdown-hover.walt-mobile,
+    .walt-dropdown-hover.walt-mobile .walt-btn,
+    .walt-dropdown-hover.walt-mobile .walt-button,
+    .walt-dropdown-click.walt-mobile,
+    .walt-dropdown-click.walt-mobile .walt-btn,
+    .walt-dropdown-click.walt-mobile .walt-button {
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+    .walt-modal-content {
+        width: 500px
+    }
+    .walt-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .walt-modal-content {
+        width: 900px
+    }
+    .walt-hide-large {
+        display: none!important
+    }
+    .walt-sidebar.walt-collapse {
+        display: block!important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .walt-hide-medium {
+        display: none!important
+    }
+}
+
+@media (max-width:992px) {
+    .walt-sidebar.walt-collapse {
+        display: none
+    }
+    .walt-main {
+        margin-left: 0!important;
+        margin-right: 0!important
+    }
+}
+
+.walt-top,
+.walt-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.walt-top {
+    top: 0
+}
+
+.walt-bottom {
+    bottom: 0
+}
+
+.walt-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.walt-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.walt-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.walt-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.walt-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.walt-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.walt-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.walt-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.walt-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.walt-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.walt-display-container:hover .walt-display-hover {
+    display: block
+}
+
+.walt-display-container:hover span.walt-display-hover {
+    display: inline-block
+}
+
+.walt-display-hover {
+    display: none
+}
+
+.walt-display-position {
+    position: absolute
+}
+
+.walt-circle {
+    border-radius: 50%
+}
+
+.walt-round-small {
+    border-radius: 2px
+}
+
+.walt-round,
+.walt-round-medium {
+    border-radius: 4px
+}
+
+.walt-round-large {
+    border-radius: 8px
+}
+
+.walt-round-xlarge {
+    border-radius: 16px
+}
+
+.walt-round-xxlarge {
+    border-radius: 32px
+}
+
+.walt-row-padding,
+.walt-row-padding>.walt-half,
+.walt-row-padding>.walt-third,
+.walt-row-padding>.walt-twothird,
+.walt-row-padding>.walt-threequarter,
+.walt-row-padding>.walt-quarter,
+.walt-row-padding>.walt-col {
+    padding: 0 8px
+}
+
+.walt-container,
+.walt-panel {
+    padding: 0.01em 16px
+}
+
+.walt-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.walt-code,
+.walt-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.walt-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.walt-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.walt-card,
+.walt-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.walt-card-4,
+.walt-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.walt-spin {
+    animation: walt-spin 2s infinite linear
+}
+
+@keyframes walt-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.walt-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.walt-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.walt-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.walt-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.walt-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.walt-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.walt-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.walt-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.walt-animate-input:focus {
+    width: 100%!important
+}
+
+.walt-opacity,
+.walt-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.walt-opacity-off,
+.walt-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.walt-opacity-max {
+    opacity: 0.25
+}
+
+.walt-opacity-min {
+    opacity: 0.75
+}
+
+.walt-greyscale-max,
+.walt-grayscale-max,
+.walt-hover-greyscale:hover,
+.walt-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.walt-greyscale,
+.walt-grayscale {
+    filter: grayscale(75%)
+}
+
+.walt-greyscale-min,
+.walt-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.walt-sepia {
+    filter: sepia(75%)
+}
+
+.walt-sepia-max,
+.walt-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.walt-sepia-min {
+    filter: sepia(50%)
+}
+
+.walt-tiny {
+    font-size: 10px!important
+}
+
+.walt-small {
+    font-size: 12px!important
+}
+
+.walt-medium {
+    font-size: 15px!important
+}
+
+.walt-large {
+    font-size: 18px!important
+}
+
+.walt-xlarge {
+    font-size: 24px!important
+}
+
+.walt-xxlarge {
+    font-size: 36px!important
+}
+
+.walt-xxxlarge {
+    font-size: 48px!important
+}
+
+.walt-jumbo {
+    font-size: 64px!important
+}
+
+.walt-left-align {
+    text-align: left!important
+}
+
+.walt-right-align {
+    text-align: right!important
+}
+
+.walt-justify {
+    text-align: justify!important
+}
+
+.walt-center {
+    text-align: center!important
+}
+
+.walt-border-0 {
+    border: 0!important
+}
+
+.walt-border {
+    border: 1px solid #ccc!important
+}
+
+.walt-border-top {
+    border-top: 1px solid #ccc!important
+}
+
+.walt-border-bottom {
+    border-bottom: 1px solid #ccc!important
+}
+
+.walt-border-left {
+    border-left: 1px solid #ccc!important
+}
+
+.walt-border-right {
+    border-right: 1px solid #ccc!important
+}
+
+.walt-topbar {
+    border-top: 6px solid #ccc!important
+}
+
+.walt-bottombar {
+    border-bottom: 6px solid #ccc!important
+}
+
+.walt-leftbar {
+    border-left: 6px solid #ccc!important
+}
+
+.walt-rightbar {
+    border-right: 6px solid #ccc!important
+}
+
+.walt-section,
+.walt-code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important
+}
+
+.walt-margin {
+    margin: 16px!important
+}
+
+.walt-margin-top {
+    margin-top: 16px!important
+}
+
+.walt-margin-bottom {
+    margin-bottom: 16px!important
+}
+
+.walt-margin-left {
+    margin-left: 16px!important
+}
+
+.walt-margin-right {
+    margin-right: 16px!important
+}
+
+.walt-padding-small {
+    padding: 4px 8px!important
+}
+
+.walt-padding {
+    padding: 8px 16px!important
+}
+
+.walt-padding-large {
+    padding: 12px 24px!important
+}
+
+.walt-padding-16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important
+}
+
+.walt-padding-24 {
+    padding-top: 24px!important;
+    padding-bottom: 24px!important
+}
+
+.walt-padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+.walt-padding-48 {
+    padding-top: 48px!important;
+    padding-bottom: 48px!important
+}
+
+.walt-padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+
+.walt-left {
+    float: left!important
+}
+
+.walt-right {
+    float: right!important
+}
+
+.walt-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+
+.walt-transparent,
+.walt-hover-none:hover {
+    background-color: transparent!important
+}
+
+.walt-hover-none:hover {
+    box-shadow: none!important
+}
+
+
+/* Colors */
+
+.walt-amber,
+.walt-hover-amber:hover {
+    color: #000!important;
+    background-color: #ffc107!important
+}
+
+.walt-aqua,
+.walt-hover-aqua:hover {
+    color: #000!important;
+    background-color: #00ffff!important
+}
+
+.walt-blue,
+.walt-hover-blue:hover {
+    color: #fff!important;
+    background-color: #2196F3!important
+}
+
+.walt-light-blue,
+.walt-hover-light-blue:hover {
+    color: #000!important;
+    background-color: #87CEEB!important
+}
+
+.walt-brown,
+.walt-hover-brown:hover {
+    color: #fff!important;
+    background-color: #795548!important
+}
+
+.walt-cyan,
+.walt-hover-cyan:hover {
+    color: #000!important;
+    background-color: #00bcd4!important
+}
+
+.walt-blue-grey,
+.walt-hover-blue-grey:hover,
+.walt-blue-gray,
+.walt-hover-blue-gray:hover {
+    color: #fff!important;
+    background-color: #607d8b!important
+}
+
+.walt-green,
+.walt-hover-green:hover {
+    color: #fff!important;
+    background-color: #4CAF50!important
+}
+
+.walt-light-green,
+.walt-hover-light-green:hover {
+    color: #000!important;
+    background-color: #8bc34a!important
+}
+
+.walt-indigo,
+.walt-hover-indigo:hover {
+    color: #fff!important;
+    background-color: #3f51b5!important
+}
+
+.walt-khaki,
+.walt-hover-khaki:hover {
+    color: #000!important;
+    background-color: #f0e68c!important
+}
+
+.walt-lime,
+.walt-hover-lime:hover {
+    color: #000!important;
+    background-color: #cddc39!important
+}
+
+.walt-orange,
+.walt-hover-orange:hover {
+    color: #000!important;
+    background-color: #ff9800!important
+}
+
+.walt-deep-orange,
+.walt-hover-deep-orange:hover {
+    color: #fff!important;
+    background-color: #ff5722!important
+}
+
+.walt-pink,
+.walt-hover-pink:hover {
+    color: #fff!important;
+    background-color: #e91e63!important
+}
+
+.walt-purple,
+.walt-hover-purple:hover {
+    color: #fff!important;
+    background-color: #9c27b0!important
+}
+
+.walt-deep-purple,
+.walt-hover-deep-purple:hover {
+    color: #fff!important;
+    background-color: #673ab7!important
+}
+
+.walt-red,
+.walt-hover-red:hover {
+    color: #fff!important;
+    background-color: #f44336!important
+}
+
+.walt-sand,
+.walt-hover-sand:hover {
+    color: #000!important;
+    background-color: #fdf5e6!important
+}
+
+.walt-teal,
+.walt-hover-teal:hover {
+    color: #fff!important;
+    background-color: #009688!important
+}
+
+.walt-yellow,
+.walt-hover-yellow:hover {
+    color: #000!important;
+    background-color: #ffeb3b!important
+}
+
+.walt-white,
+.walt-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
+}
+
+.walt-black,
+.walt-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important
+}
+
+.walt-grey,
+.walt-hover-grey:hover,
+.walt-gray,
+.walt-hover-gray:hover {
+    color: #000!important;
+    background-color: #bbb!important
+}
+
+.walt-light-grey,
+.walt-hover-light-grey:hover,
+.walt-light-gray,
+.walt-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important
+}
+
+.walt-dark-grey,
+.walt-hover-dark-grey:hover,
+.walt-dark-gray,
+.walt-hover-dark-gray:hover {
+    color: #fff!important;
+    background-color: #616161!important
+}
+
+.walt-pale-red,
+.walt-hover-pale-red:hover {
+    color: #000!important;
+    background-color: #ffdddd!important
+}
+
+.walt-pale-green,
+.walt-hover-pale-green:hover {
+    color: #000!important;
+    background-color: #ddffdd!important
+}
+
+.walt-pale-yellow,
+.walt-hover-pale-yellow:hover {
+    color: #000!important;
+    background-color: #ffffcc!important
+}
+
+.walt-pale-blue,
+.walt-hover-pale-blue:hover {
+    color: #000!important;
+    background-color: #ddffff!important
+}
+
+.walt-text-red,
+.walt-hover-text-red:hover {
+    color: #f44336!important
+}
+
+.walt-text-green,
+.walt-hover-text-green:hover {
+    color: #4CAF50!important
+}
+
+.walt-text-blue,
+.walt-hover-text-blue:hover {
+    color: #2196F3!important
+}
+
+.walt-text-yellow,
+.walt-hover-text-yellow:hover {
+    color: #ffeb3b!important
+}
+
+.walt-text-white,
+.walt-hover-text-white:hover {
+    color: #fff!important
+}
+
+.walt-text-black,
+.walt-hover-text-black:hover {
+    color: #000!important
+}
+
+.walt-text-grey,
+.walt-hover-text-grey:hover,
+.walt-text-gray,
+.walt-hover-text-gray:hover {
+    color: #757575!important
+}
+
+.walt-text-amber {
+    color: #ffc107!important
+}
+
+.walt-text-aqua {
+    color: #00ffff!important
+}
+
+.walt-text-light-blue {
+    color: #87CEEB!important
+}
+
+.walt-text-brown {
+    color: #795548!important
+}
+
+.walt-text-cyan {
+    color: #00bcd4!important
+}
+
+.walt-text-blue-grey,
+.walt-text-blue-gray {
+    color: #607d8b!important
+}
+
+.walt-text-light-green {
+    color: #8bc34a!important
+}
+
+.walt-text-indigo {
+    color: #3f51b5!important
+}
+
+.walt-text-khaki {
+    color: #b4aa50!important
+}
+
+.walt-text-lime {
+    color: #cddc39!important
+}
+
+.walt-text-orange {
+    color: #ff9800!important
+}
+
+.walt-text-deep-orange {
+    color: #ff5722!important
+}
+
+.walt-text-pink {
+    color: #e91e63!important
+}
+
+.walt-text-purple {
+    color: #9c27b0!important
+}
+
+.walt-text-deep-purple {
+    color: #673ab7!important
+}
+
+.walt-text-sand {
+    color: #fdf5e6!important
+}
+
+.walt-text-teal {
+    color: #009688!important
+}
+
+.walt-text-light-grey,
+.walt-hover-text-light-grey:hover,
+.walt-text-light-gray,
+.walt-hover-text-light-gray:hover {
+    color: #f1f1f1!important
+}
+
+.walt-text-dark-grey,
+.walt-hover-text-dark-grey:hover,
+.walt-text-dark-gray,
+.walt-hover-text-dark-gray:hover {
+    color: #3a3a3a!important
+}
+
+.walt-border-red,
+.walt-hover-border-red:hover {
+    border-color: #f44336!important
+}
+
+.walt-border-green,
+.walt-hover-border-green:hover {
+    border-color: #4CAF50!important
+}
+
+.walt-border-blue,
+.walt-hover-border-blue:hover {
+    border-color: #2196F3!important
+}
+
+.walt-border-yellow,
+.walt-hover-border-yellow:hover {
+    border-color: #ffeb3b!important
+}
+
+.walt-border-white,
+.walt-hover-border-white:hover {
+    border-color: #fff!important
+}
+
+.walt-border-black,
+.walt-hover-border-black:hover {
+    border-color: #000!important
+}
+
+.walt-border-grey,
+.walt-hover-border-grey:hover,
+.walt-border-gray,
+.walt-hover-border-gray:hover {
+    border-color: #bbb!important
+}
